@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cafe_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/litchi"
+        />
+
+    <TextView
+        android:id="@+id/cafe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cafe_img"
+        android:paddingTop="10dp"
+        android:text="LiTchi"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp"
+        />
+
+    <ImageView
+        android:id="@+id/location_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:layout_toRightOf="@+id/cafe_img"
+        android:layout_below="@+id/cafe_name"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cafe_name"
+        android:layout_toRightOf="@id/location_img"
+        android:text="El-dourous Street , Faqous , sharqia"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/phone_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_smartphone_black_24dp"
+        android:layout_toRightOf="@+id/cafe_img"
+        android:layout_below="@+id/address"
+        />
+    <TextView
+        android:id="@+id/cafe_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_toRightOf="@+id/phone_img"
+        android:text="055 3944067"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
